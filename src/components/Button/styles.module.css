@@ -1,0 +1,75 @@
+@import url('../../fonts/fonts.css');
+
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.default {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.default:active {
+  background: #ddd;
+}
+
+.primary {
+  background-color: #498aed;
+  border: 1px solid #498aed;
+
+  color: #fff;
+}
+
+.primary:active {
+  background-color: #3564ab;
+  border: 1px solid #3564ab;
+}
+
+.success {
+  background-color: #68cc68;
+  border: 1px solid #68cc68;
+  color: #fff;
+}
+
+.success:active {
+  background-color: #489048;
+  border: 1px solid #489048;
+}
+
+.warning {
+  background-color: #efc669;
+  border: 1px solid #efc669;
+  color: #fff;
+}
+
+.warning:active {
+  background-color: #bf9f55;
+  border: 1px solid #bf9f55;
+}
+
+.danger {
+  background-color: #e4474e;
+  border: 1px solid #e4474e;
+  color: #fff;
+}
+
+.danger:active {
+  background-color: #ab373d;
+  border: 1px solid #ab373d;
+}
+
+
+.disabled {
+  background: #ddd;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background: #ddd;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,72 @@
+@import url('../../fonts/fonts.css');
+
+.wrapper {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.input {
+  background: none;
+  padding: 10px 15px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.disabled {
+  background: rgb(235, 233, 233);
+}
+
+.prefix, .suffix {
+  position: absolute;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suffix {
+  right: 0;
+}
+
+.prefix {
+  left: 0;
+}
+
+.pr {
+  padding-right: 40px;
+}
+
+.pl {
+  padding-left: 40px;
+}
+
+.prepend, .append {
+  display: table-cell;
+  color: #fff;
+  background: #00f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+.inline_table {
+  display: inline-table;
+}
+
+.border_left_none {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.border_right_none {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
