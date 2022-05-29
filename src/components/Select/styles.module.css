@@ -1,0 +1,49 @@
+@import '../../fonts/fonts.css';
+
+.select_wrapper {
+  position: relative;
+  width: 200px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.select {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select_box {
+  position: absolute;
+  top: calc(100% + 10px);
+  background: #fff;
+  width: 100%;
+  border-radius: 4px;
+  max-height: 100px;
+  overflow: auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.select_box_item {
+  padding: 5px 15px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select_box_item:hover {
+  background: #ddd;
+}
+
+.select_box_hide {
+  max-height: 0px;
+  opacity: 0;
+}
