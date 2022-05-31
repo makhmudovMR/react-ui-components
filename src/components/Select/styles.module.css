@@ -16,6 +16,9 @@
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .select_box {
@@ -46,4 +49,30 @@
 .select_box_hide {
   max-height: 0px;
   opacity: 0;
+}
+
+.arrow_left {
+  transform: rotate(45deg);
+}
+
+.arrow_right {
+  transform: rotate(-45deg);
+  margin-left: -3px;
+}
+
+.arrow span {
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  background: #444;
+  margin-bottom: 3px;
+  transition: all 0.5s;
+}
+
+.arrow_right_open {
+  transform: rotate(45deg);
+}
+
+.arrow_left_open {
+  transform: rotate(-45deg);
 }

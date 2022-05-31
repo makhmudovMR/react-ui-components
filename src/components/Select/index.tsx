@@ -45,7 +45,21 @@ const Select = ({
   return (
     <div className={styles.select_wrapper}>
       <div className={styles.select} onClick={() => setIsHide(!isHide)}>
-        {label}
+        <div>
+          {label}
+        </div>
+        <div className={styles.arrow}>
+          <span className={
+            classNames(styles.arrow_left, {
+              [styles.arrow_left_open]: !isHide
+            })
+          }></span>
+          <span className={
+            classNames(styles.arrow_right, {
+              [styles.arrow_right_open]: !isHide
+            })
+          }></span>
+        </div>
       </div>
       <div
         className={
