@@ -34,4 +34,5 @@ Primary.args = {
     {value: 'value 4', label: 'Test 7'},
   ],
   placeholder: 'Select item',
+  disabled: false,
 }

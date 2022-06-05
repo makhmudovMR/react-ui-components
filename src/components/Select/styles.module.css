@@ -76,3 +76,8 @@
 .arrow_left_open {
   transform: rotate(-45deg);
 }
+
+.disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}

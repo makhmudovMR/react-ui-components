@@ -28,6 +28,5 @@ export const All = () => (
     <Button onClick={() => {}} label='Warning' type='warning'/>
     <Button onClick={() => {}} label='Danger' type='danger'/>
     <Button onClick={() => {}} label='Danger' type='danger' disabled/>
-
   </div>
 );

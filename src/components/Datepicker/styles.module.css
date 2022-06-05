@@ -1,0 +1,127 @@
+@import '../../fonts/fonts.css';
+
+.calendar {
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+.calendar_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.calendar_body {
+  padding: 10px;
+}
+
+.calendar_week_day {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+}
+
+.calendar_week_day div {
+  display: grid;
+  place-items: center;
+  color: #ddd;
+  font-size: 12px;
+}
+
+.calendar_days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar_days div {
+  height: 30px;
+  width: 35px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.year {
+  padding:5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.year:hover {
+  background: #eee;
+}
+
+.year_picker {
+  padding: 5px;
+}
+
+.month_picker {
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.month_picker:hover {
+  background: #eee;
+}
+
+.year_changer {
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.year_changer:hover {
+  background: #eee;
+}
+
+.calendar_footer {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+}
+
+.dark_mode_switch {
+  margin-left: 10px;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 14px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dark_mode_switch_switched {
+  background-color: blue;
+}
+
+.dark_mode_switch_ident {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.dark_mode_switch_ident_switched {
+  left: calc(1px + 50%);
+}
+
+
+

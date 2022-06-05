@@ -6,14 +6,16 @@ interface ISelect {
   options: [],
   placeholder: '',
   value?: string,
-  setValue?: (value: string) => {},
+  setValue?: (value?: string) => {},
+  disabled?: boolean;
 }
 
 const defaultProps = {
   options: [],
   placeholder: '',
   value: '',
-  setValue: (value) => {}
+  setValue: () => {},
+  disabled: false,
 } as ISelect
 
 const Select = ({
@@ -21,6 +23,7 @@ const Select = ({
   placeholder,
   value,
   setValue,
+  disabled,
 }: ISelect) => {
 
   const [isHide, setIsHide] = useState(true);
@@ -34,7 +37,7 @@ const Select = ({
           console.log(item.label);
           setValue(item.value);
           setLabel(item.label);
-          setIsHide(true)
+          setIsHide(true);
         }}
       >
         {item.label}
@@ -44,7 +47,9 @@ const Select = ({
 
   return (
     <div className={styles.select_wrapper}>
-      <div className={styles.select} onClick={() => setIsHide(!isHide)}>
+      <div className={classNames(styles.select, {
+        [styles.disabled] : disabled
+      })} onClick={() => !disabled && setIsHide(!isHide)}>
         <div>
           {label}
         </div>
